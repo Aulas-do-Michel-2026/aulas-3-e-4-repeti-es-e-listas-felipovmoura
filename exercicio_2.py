@@ -1,27 +1,8 @@
-"""
-#### Exercício 1
+numero = int(input("Digite um número: "))
 
-Receba um número e calcule o fatorial dele.
+fatorial = 1
 
-Obs: O fatorial de um número é calculado pela seguinte fórmula "n! = n · (n-1) · (n-2) … 3 · 2 · 1". Ou seja, por exemplo:
+for i in range(1, numero + 1):
+    fatorial *= i
 
-4! = 4 * 3 * 2 * 1 = 24.
-
-Exemplo:
-
-Digite um número:
-4
-
-O fatorial de 4 é 24.
---------
-Digite um número:
-5
-
-O fatorial de 5 é 120.
-
-Dica: Para ajudar nesse cálculo, lembre-se das estruturas de repetição. 
-
-Pode-se utilizar o comando "while" ou até o "for" para te ajudar nisso.
-
-Fonte: Curso em vídeo.
-"""
+print(f"O fatorial de {numero} é {fatorial}.")
